@@ -4,12 +4,12 @@ import Home from "views/home/Home";
 import Category from "views/category/Category";
 import Profile from "views/profile/Profile";
 import MyCart from "views/carts/MyCart";
-import ShopDetail from "views/detail/ShopDetail"
+
 Vue.use(Router)
 
-export default  new Router({
-  mode:'history',
-  routes : [
+export  default new Router({
+  mode: 'history',
+  routes: [
     {
       path:'/',
       redirect:'/home'
@@ -29,10 +29,6 @@ export default  new Router({
     {
       path: '/myCart',
       component: MyCart
-    },
-    {
-      path: '/detail/:iid',
-      component: ShopDetail
     }
   ]
 })
